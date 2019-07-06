@@ -15,7 +15,7 @@ project:
 # Configuration settings for new git repository.
 git:
   default_branch: master
-  remotes: {  }
+  remotes: { eerglasscock@svn-29892.prod.hosting.acquia.com:eerglasscock.git }
 deploy:
   # When manually deploying a tag, also tag the source repository.
   tag_source: true
