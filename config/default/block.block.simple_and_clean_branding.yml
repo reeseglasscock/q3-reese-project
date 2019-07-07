@@ -1,0 +1,25 @@
+uuid: 47799f2b-4159-46aa-804b-55fbcaf5b889
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - simple_and_clean
+_core:
+  default_config_hash: NDwadleLD3YVSbDUaakxyYZyINYtkFtOVGShfq4kWy8
+id: simple_and_clean_branding
+theme: simple_and_clean
+region: header
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: true
+  use_site_slogan: true
+visibility: {  }

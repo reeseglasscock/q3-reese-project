@@ -1,0 +1,22 @@
+uuid: 28d6510e-269b-4139-9349-d38601dddd7b
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - simple_and_clean
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: simple_and_clean_powered
+theme: simple_and_clean
+region: header
+weight: 10
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

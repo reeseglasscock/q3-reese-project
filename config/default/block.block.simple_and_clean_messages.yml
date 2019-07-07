@@ -1,0 +1,22 @@
+uuid: cc3fc1f5-aaad-4f78-b2b6-f26fbc6616ac
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - simple_and_clean
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: simple_and_clean_messages
+theme: simple_and_clean
+region: header
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,22 @@
+uuid: e0f69e33-be16-4edc-8f25-1fdbb7c45b3f
+langcode: en
+status: true
+dependencies:
+  theme:
+    - simple_and_clean
+_core:
+  default_config_hash: X9I1OB0W3WlWtrK-CNcg6hNWwa8wficanpH8pYnDZDE
+id: simple_and_clean_local_tasks
+theme: simple_and_clean
+region: content
+weight: -40
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Tabs
+  provider: core
+  label_display: '0'
+  primary: true
+  secondary: true
+visibility: {  }

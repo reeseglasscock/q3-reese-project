@@ -1,0 +1,20 @@
+uuid: ebe12fb8-3cb8-4165-b37f-46c03d5e9d17
+langcode: en
+status: true
+dependencies:
+  theme:
+    - simple_and_clean
+_core:
+  default_config_hash: 13GQpeITIJsp1kyPniXtWZfyFH87vb1xxJCHifL4UeE
+id: simple_and_clean_local_actions
+theme: simple_and_clean
+region: content
+weight: -20
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

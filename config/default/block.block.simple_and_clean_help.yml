@@ -1,0 +1,22 @@
+uuid: b0891b60-78f1-4a50-a115-1b9250f46f0a
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - simple_and_clean
+_core:
+  default_config_hash: 8I8iACSa0sKO3k3jlvUG1ge52rfcKX7USJAQYnzuBgg
+id: simple_and_clean_help
+theme: simple_and_clean
+region: content
+weight: -30
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }
