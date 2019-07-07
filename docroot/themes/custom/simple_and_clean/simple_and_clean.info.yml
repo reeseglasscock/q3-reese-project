@@ -1,0 +1,12 @@
+name: Simple and Clean
+type: theme
+description: A simple and clean theme.
+core: 8.x
+libraries:
+  - simple_and_clean/global-styling
+base theme: stable
+regions:
+  header: Header
+  content: Content
+  sidebar_first: 'Sidebar first'
+  footer: Footer
