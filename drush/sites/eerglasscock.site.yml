@@ -1,0 +1,46 @@
+# Application 'eerglasscock', environment 'dev'.
+dev:
+  root: /var/www/html/eerglasscock.dev/docroot
+  ac-site: eerglasscock
+  ac-env: dev
+  ac-realm: prod
+  uri: eerglasscockdev.prod.acquia-sites.com
+  dev.livedev:
+    parent: '@eerglasscock.dev'
+    root: /mnt/gfs/eerglasscock.dev/livedev/docroot
+  host: eerglasscockdev.ssh.prod.acquia-sites.com
+  user: eerglasscock.dev
+  paths:
+    drush-script: drush9
+
+
+# Application 'eerglasscock', environment 'prod'.
+prod:
+  root: /var/www/html/eerglasscock.prod/docroot
+  ac-site: eerglasscock
+  ac-env: prod
+  ac-realm: prod
+  uri: eerglasscock.prod.acquia-sites.com
+  prod.livedev:
+    parent: '@eerglasscock.prod'
+    root: /mnt/gfs/eerglasscock.prod/livedev/docroot
+  host: eerglasscock.ssh.prod.acquia-sites.com
+  user: eerglasscock.prod
+  paths:
+    drush-script: drush9
+
+
+# Application 'eerglasscock', environment 'test'.
+test:
+  root: /var/www/html/eerglasscock.test/docroot
+  ac-site: eerglasscock
+  ac-env: test
+  ac-realm: prod
+  uri: eerglasscockstg.prod.acquia-sites.com
+  test.livedev:
+    parent: '@eerglasscock.test'
+    root: /mnt/gfs/eerglasscock.test/livedev/docroot
+  host: eerglasscockstg.ssh.prod.acquia-sites.com
+  user: eerglasscock.test
+  paths:
+    drush-script: drush9

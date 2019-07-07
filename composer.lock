@@ -10919,12 +10919,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/phpstan/phpstan.git",
-                "reference": "ab427894903859ecb4a58a64748c2b0dc229b1d3"
+                "reference": "d5eb89ba61eee89f5380a31c9599626430c25649"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/ab427894903859ecb4a58a64748c2b0dc229b1d3",
-                "reference": "ab427894903859ecb4a58a64748c2b0dc229b1d3",
+                "url": "https://api.github.com/repos/phpstan/phpstan/zipball/d5eb89ba61eee89f5380a31c9599626430c25649",
+                "reference": "d5eb89ba61eee89f5380a31c9599626430c25649",
                 "shasum": ""
             },
             "require": {
@@ -10986,7 +10986,7 @@
                 "MIT"
             ],
             "description": "PHPStan - PHP Static Analysis Tool",
-            "time": "2019-07-05T10:51:46+00:00"
+            "time": "2019-07-07T13:50:30+00:00"
         },
         {
             "name": "phpstan/phpstan-deprecation-rules",

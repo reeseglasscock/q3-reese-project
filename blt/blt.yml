@@ -17,6 +17,7 @@ git:
   default_branch: master
   remotes:
     cloud: 'eerglasscock@svn-29892.prod.hosting.acquia.com:eerglasscock.git'
+  email: 'reese.glasscock@acquia.com'
 deploy:
   # When manually deploying a tag, also tag the source repository.
   tag_source: true
