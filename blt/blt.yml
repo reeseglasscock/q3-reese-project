@@ -31,7 +31,7 @@ drush:
     # The drush alias against which all ci commands are run.
     ci: self
     # The default drush alias to be used when no environment is specified.
-  default_alias: '${drush.aliases.local}'
+  default_alias: q3-reese-project.local
 # An array of modules to be enabled or uninstalled automatically in local, ci,
 # and deploy contexts.
 modules:

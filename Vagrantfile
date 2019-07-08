@@ -1,5 +1,6 @@
 # The absolute path to the root directory of the project. Both Drupal VM and
 # the config file need to be contained within this path.
+
 ENV['DRUPALVM_PROJECT_ROOT'] = "#{__dir__}"
 
 # The relative path from the project root to the config directory where you
@@ -11,3 +12,7 @@ ENV['DRUPALVM_DIR'] = "vendor/geerlingguy/drupal-vm"
 
 # Load the real Vagrantfile
 load "#{__dir__}/#{ENV['DRUPALVM_DIR']}/Vagrantfile"
+
+Vagrant.configure("2") do |config|
+    config.ssh.private_key_path  = "/var/www/ssh_keys/insecure_private_key"
+end
