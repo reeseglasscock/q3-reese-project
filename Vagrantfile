@@ -13,6 +13,6 @@ ENV['DRUPALVM_DIR'] = "vendor/geerlingguy/drupal-vm"
 # Load the real Vagrantfile
 load "#{__dir__}/#{ENV['DRUPALVM_DIR']}/Vagrantfile"
 
-Vagrant.configure("2") do |config|
-    config.ssh.private_key_path  = "/var/www/ssh_keys/insecure_private_key"
-end
+# Vagrant.configure("2") do |config|
+#    config.ssh.private_key_path  = "/var/www/ssh_keys/insecure_private_key"
+# end
