@@ -1,0 +1,20 @@
+uuid: f6687edf-ef10-40b9-b3f5-db44b90f8e80
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_location
+field_name: field_location
+entity_type: node
+type: text
+settings:
+  max_length: 75
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

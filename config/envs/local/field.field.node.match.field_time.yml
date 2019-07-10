@@ -1,0 +1,21 @@
+uuid: 2aa80104-aeff-4be0-81a0-8d5f94b1aaff
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_time
+    - node.type.match
+id: node.match.field_time
+field_name: field_time
+entity_type: node
+bundle: match
+label: 'Time of Match'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1562731718
+default_value_callback: ''
+settings: {  }
+field_type: timestamp

@@ -1,0 +1,24 @@
+uuid: cbe91fbe-7c04-41a8-aa27-59efdb25e875
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location
+    - node.type.match
+  module:
+    - text
+id: node.match.field_location
+field_name: field_location
+entity_type: node
+bundle: match
+label: Location
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'PDX Acquia'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text
