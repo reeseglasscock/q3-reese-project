@@ -1,4 +1,6 @@
 entity_blocks:
+  - block
+  - block_content
   - media
   - node
   - taxonomy_term

@@ -1,11 +1,11 @@
 uuid: 7c863abc-1842-4290-aa4a-9bc56b33d66f
-name: reeseglasscock
+name: 'Acquia PDX Magic Tourney'
 mail: reese.glasscock@acquia.com
 slogan: ''
 page:
   403: ''
   404: ''
-  front: /node
+  front: /match-lineup
 admin_compact_mode: false
 weight_select_max: 100
 langcode: en
