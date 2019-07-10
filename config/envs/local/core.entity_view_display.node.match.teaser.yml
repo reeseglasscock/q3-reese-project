@@ -1,13 +1,9 @@
-uuid: b314eda5-1ca9-43b1-a799-6014ddbc274d
+uuid: 3b4bea24-0c56-4d42-aed2-80c88fc34c6d
 langcode: en
 status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.match.field_location
-    - field.field.node.match.field_player1
-    - field.field.node.match.field_player_2
-    - field.field.node.match.field_time
     - node.type.match
   module:
     - user
@@ -22,8 +18,4 @@ content:
     third_party_settings: {  }
     region: content
 hidden:
-  field_location: true
-  field_player1: true
-  field_player_2: true
-  field_time: true
   search_api_excerpt: true

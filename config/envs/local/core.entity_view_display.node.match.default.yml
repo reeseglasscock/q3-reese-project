@@ -1,46 +1,116 @@
-uuid: 0e14d749-d312-400a-9c8b-c4e2fcf1d55c
+uuid: 6ae70fd9-93b9-4b36-beb0-575e57ad8ed9
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.match.field_location
-    - field.field.node.match.field_player1
-    - field.field.node.match.field_player_2
-    - field.field.node.match.field_time
+    - field.field.node.match.field_date_of_match
+    - field.field.node.match.field_location_of_match
+    - field.field.node.match.field_pl
+    - field.field.node.match.field_player_1
+    - field.field.node.match.layout_selection
     - node.type.match
   module:
+    - layout_builder
+    - layout_discovery
+    - layout_library
     - text
     - user
+third_party_settings:
+  layout_builder:
+    allow_custom: false
+    enabled: true
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings: {  }
+        components:
+          41243361-53a6-4ea9-addd-7ba5585f4cb4:
+            uuid: 41243361-53a6-4ea9-addd-7ba5585f4cb4
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:match:field_player_1'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 0
+          a2ba702e-a8b0-4a2c-bd30-636f5d5091f2:
+            uuid: a2ba702e-a8b0-4a2c-bd30-636f5d5091f2
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:match:field_pl'
+              formatter:
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+                type: entity_reference_label
+            additional: {  }
+            weight: 1
+          e186afc9-5b09-4ebe-9985-d0b653e181d1:
+            uuid: e186afc9-5b09-4ebe-9985-d0b653e181d1
+            region: content
+            configuration:
+              id: 'field_block:node:match:field_date_of_match'
+              label: 'Date of Match'
+              provider: layout_builder
+              label_display: '0'
+              formatter:
+                label: above
+                type: timestamp
+                settings:
+                  date_format: medium
+                  custom_date_format: ''
+                  timezone: ''
+                third_party_settings: {  }
+              context_mapping:
+                entity: layout_builder.entity
+            additional: {  }
+            weight: 2
+          48449a9b-77ad-444c-abd6-0abcaf99d3c3:
+            uuid: 48449a9b-77ad-444c-abd6-0abcaf99d3c3
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'field_block:node:match:field_location_of_match'
+              formatter:
+                label: above
+                settings: {  }
+                third_party_settings: {  }
+                type: text_default
+            additional: {  }
+            weight: 3
+          97c4a13d-d87e-4e30-ade0-2b0fb3a3c7d7:
+            uuid: 97c4a13d-d87e-4e30-ade0-2b0fb3a3c7d7
+            region: content
+            configuration:
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              id: 'extra_field_block:node:match:links'
+            additional: {  }
+            weight: 4
+        third_party_settings: {  }
+  layout_library:
+    enable: true
 id: node.match.default
 targetEntityType: node
 bundle: match
 mode: default
 content:
-  field_location:
+  field_date_of_match:
     weight: 2
-    label: above
-    settings: {  }
-    third_party_settings: {  }
-    type: text_default
-    region: content
-  field_player1:
-    weight: 0
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_player_2:
-    weight: 1
-    label: above
-    settings:
-      link: true
-    third_party_settings: {  }
-    type: entity_reference_label
-    region: content
-  field_time:
-    weight: 3
     label: above
     settings:
       date_format: medium
@@ -49,10 +119,34 @@ content:
     third_party_settings: {  }
     type: timestamp
     region: content
+  field_location_of_match:
+    weight: 3
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_pl:
+    weight: 1
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_player_1:
+    weight: 0
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
   links:
     weight: 4
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
+  layout_selection: true
   search_api_excerpt: true

@@ -1,0 +1,21 @@
+uuid: 48c008ba-bd28-46ce-8bce-afd83aeadd43
+langcode: en
+status: true
+dependencies: {  }
+id: page_creator
+label: 'Basic page creator'
+weight: 7
+is_admin: false
+permissions:
+  - 'access ckeditor_media_browser entity browser pages'
+  - 'access contextual links'
+  - 'access in-place editing'
+  - 'access media_browser entity browser pages'
+  - 'access toolbar'
+  - 'configure any layout'
+  - 'create page content'
+  - 'create url aliases'
+  - 'edit own page content'
+  - 'use text format rich_text'
+  - 'view own unpublished content'
+  - 'view page revisions'

@@ -1,6 +1,7 @@
 module:
   acquia_connector: 0
   automated_cron: 0
+  bg_image_formatter: 0
   big_pipe: 0
   block: 0
   block_content: 0
@@ -18,6 +19,11 @@ module:
   devel: 0
   dynamic_page_cache: 0
   editor: 0
+  embed: 0
+  entity_block: 0
+  entity_browser: 0
+  entity_browser_block: 0
+  entity_embed: 0
   field: 0
   field_ui: 0
   file: 0
@@ -25,7 +31,21 @@ module:
   help: 0
   history: 0
   image: 0
+  inline_entity_form: 0
+  layout_builder: 0
+  layout_builder_restrictions: 0
+  layout_builder_st: 0
+  layout_discovery: 0
+  layout_library: 0
+  lightning_banner_block: 0
+  lightning_core: 0
+  lightning_landing_page: 0
+  lightning_layout: 0
+  lightning_media: 0
+  lightning_roles: 0
   link: 0
+  media: 0
+  media_library: 0
   memcache: 0
   menu_ui: 0
   node: 0
@@ -43,10 +63,12 @@ module:
   system: 0
   taxonomy: 0
   text: 0
+  token: 0
   toolbar: 0
   tour: 0
   update: 0
   user: 0
+  views_infinite_scroll: 0
   views_ui: 0
   menu_link_content: 1
   views: 10

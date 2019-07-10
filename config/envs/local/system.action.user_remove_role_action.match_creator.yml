@@ -1,0 +1,14 @@
+uuid: 8a5b00dd-da1d-4ecb-8c18-0193dd8b4a55
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.match_creator
+  module:
+    - user
+id: user_remove_role_action.match_creator
+label: 'Remove the Match creator role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: match_creator

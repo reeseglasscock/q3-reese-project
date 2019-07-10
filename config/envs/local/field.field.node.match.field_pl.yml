@@ -1,0 +1,29 @@
+uuid: 765eaea5-8b64-4913-a359-649a80cf3792
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_pl
+    - node.type.match
+id: node.match.field_pl
+field_name: field_pl
+entity_type: node
+bundle: match
+label: 'Player 2'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:user'
+  handler_settings:
+    include_anonymous: false
+    filter:
+      type: _none
+    target_bundles: null
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+field_type: entity_reference

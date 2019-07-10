@@ -1,0 +1,14 @@
+uuid: 9b182990-457f-4f38-9997-4b2546967134
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.match_creator
+  module:
+    - user
+id: user_add_role_action.match_creator
+label: 'Add the Match creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: match_creator

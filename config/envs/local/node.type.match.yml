@@ -1,4 +1,4 @@
-uuid: b65cb020-797d-4339-8a92-103258d6cb9a
+uuid: fd70d211-8916-4268-816c-8f31ae6e15ac
 langcode: en
 status: true
 dependencies:
@@ -10,7 +10,7 @@ third_party_settings:
     parent: ''
 name: Match
 type: match
-description: 'This will be a game match for the tournaments.'
+description: 'This will be for creating a match between two players'
 help: ''
 new_revision: true
 preview_mode: 1

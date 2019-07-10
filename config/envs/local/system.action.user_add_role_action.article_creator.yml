@@ -1,0 +1,14 @@
+uuid: 5c110021-69d9-4737-880d-74c0657de7d3
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.article_creator
+  module:
+    - user
+id: user_add_role_action.article_creator
+label: 'Add the Article creator role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: article_creator

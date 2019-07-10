@@ -1,0 +1,13 @@
+uuid: f3544251-36b8-4220-befc-5eb829cf3d93
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 4xRLPoyhr5ynv4NK0SXc_NfjeWzkXN2PaV9zAmNIH3s
+id: layout_manager
+label: 'Layout manager'
+weight: 2
+is_admin: false
+permissions:
+  - 'administer node display'
+  - 'configure any layout'

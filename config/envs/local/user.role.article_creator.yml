@@ -1,0 +1,21 @@
+uuid: 6716c476-2de5-409e-b0b0-cadfc6e2e89f
+langcode: en
+status: true
+dependencies: {  }
+id: article_creator
+label: 'Article creator'
+weight: 3
+is_admin: false
+permissions:
+  - 'access ckeditor_media_browser entity browser pages'
+  - 'access contextual links'
+  - 'access in-place editing'
+  - 'access media_browser entity browser pages'
+  - 'access toolbar'
+  - 'configure any layout'
+  - 'create article content'
+  - 'create url aliases'
+  - 'edit own article content'
+  - 'use text format rich_text'
+  - 'view article revisions'
+  - 'view own unpublished content'

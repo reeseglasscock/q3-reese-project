@@ -1,0 +1,24 @@
+uuid: 7d74966c-cf8e-4684-97e8-6dabab97cf68
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_location_of_match
+    - node.type.match
+  module:
+    - text
+id: node.match.field_location_of_match
+field_name: field_location_of_match
+entity_type: node
+bundle: match
+label: 'Location of Match'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 'Acquia PDX'
+    format: basic_html
+default_value_callback: ''
+settings: {  }
+field_type: text

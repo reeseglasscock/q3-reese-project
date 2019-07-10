@@ -1,0 +1,14 @@
+uuid: bc115ee8-c75c-4158-b096-8ee4d95ec4f7
+langcode: en
+status: true
+dependencies:
+  config:
+    - user.role.match_reviewer
+  module:
+    - user
+id: user_add_role_action.match_reviewer
+label: 'Add the Match reviewer role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: match_reviewer

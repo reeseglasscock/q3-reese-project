@@ -1,0 +1,12 @@
+uuid: ddb4ea54-fa15-4976-a761-f47bafaa0986
+langcode: en
+status: true
+dependencies: {  }
+id: article_reviewer
+label: 'Article reviewer'
+weight: 4
+is_admin: false
+permissions:
+  - 'access content overview'
+  - 'delete any article content'
+  - 'edit any article content'

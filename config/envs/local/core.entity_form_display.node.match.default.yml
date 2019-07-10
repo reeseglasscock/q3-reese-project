@@ -1,12 +1,13 @@
-uuid: f26a52ff-8b5b-42b4-b67b-09fa1d25a79d
+uuid: 2de8b909-1ae2-41b3-bc7b-afe702051fd0
 langcode: en
 status: true
 dependencies:
   config:
-    - field.field.node.match.field_location
-    - field.field.node.match.field_player1
-    - field.field.node.match.field_player_2
-    - field.field.node.match.field_time
+    - field.field.node.match.field_date_of_match
+    - field.field.node.match.field_location_of_match
+    - field.field.node.match.field_pl
+    - field.field.node.match.field_player_1
+    - field.field.node.match.layout_selection
     - node.type.match
   module:
     - path
@@ -18,20 +19,26 @@ mode: default
 content:
   created:
     type: datetime_timestamp
-    weight: 5
+    weight: 6
     region: content
     settings: {  }
     third_party_settings: {  }
-  field_location:
+  field_date_of_match:
     weight: 3
+    settings: {  }
+    third_party_settings: {  }
+    type: datetime_timestamp
+    region: content
+  field_location_of_match:
+    weight: 4
     settings:
       size: 60
       placeholder: ''
     third_party_settings: {  }
     type: text_textfield
     region: content
-  field_player1:
-    weight: 0
+  field_pl:
+    weight: 2
     settings:
       match_operator: CONTAINS
       size: 60
@@ -39,7 +46,7 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_player_2:
+  field_player_1:
     weight: 1
     settings:
       match_operator: CONTAINS
@@ -48,15 +55,15 @@ content:
     third_party_settings: {  }
     type: entity_reference_autocomplete
     region: content
-  field_time:
-    weight: 2
+  layout_selection:
+    type: options_select
+    region: content
+    weight: 26
     settings: {  }
     third_party_settings: {  }
-    type: datetime_timestamp
-    region: content
   path:
     type: path
-    weight: 7
+    weight: 9
     region: content
     settings: {  }
     third_party_settings: {  }
@@ -64,25 +71,38 @@ content:
     type: boolean_checkbox
     settings:
       display_label: true
-    weight: 6
+    weight: 7
     region: content
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     settings:
       display_label: true
+    weight: 10
+    region: content
+    third_party_settings: {  }
+  sticky:
+    type: boolean_checkbox
+    settings:
+      display_label: true
     weight: 8
     region: content
     third_party_settings: {  }
+  title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: 'Match Title (Player vs Player)'
+    third_party_settings: {  }
   uid:
     type: entity_reference_autocomplete
-    weight: 4
+    weight: 5
     settings:
       match_operator: CONTAINS
       size: 60
       placeholder: ''
     region: content
     third_party_settings: {  }
-hidden:
-  sticky: true
-  title: true
+hidden: {  }

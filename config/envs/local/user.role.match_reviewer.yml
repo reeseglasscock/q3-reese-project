@@ -1,0 +1,12 @@
+uuid: 140725c0-3bde-4abf-85a3-5f06634c9289
+langcode: en
+status: true
+dependencies: {  }
+id: match_reviewer
+label: 'Match reviewer'
+weight: 6
+is_admin: false
+permissions:
+  - 'access content overview'
+  - 'delete any match content'
+  - 'edit any match content'

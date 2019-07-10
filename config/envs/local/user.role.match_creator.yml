@@ -1,0 +1,21 @@
+uuid: 2e51b910-7d64-4809-8130-95c66f50fc97
+langcode: en
+status: true
+dependencies: {  }
+id: match_creator
+label: 'Match creator'
+weight: 5
+is_admin: false
+permissions:
+  - 'access ckeditor_media_browser entity browser pages'
+  - 'access contextual links'
+  - 'access in-place editing'
+  - 'access media_browser entity browser pages'
+  - 'access toolbar'
+  - 'configure any layout'
+  - 'create match content'
+  - 'create url aliases'
+  - 'edit own match content'
+  - 'use text format rich_text'
+  - 'view match revisions'
+  - 'view own unpublished content'

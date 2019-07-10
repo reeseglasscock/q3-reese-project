@@ -1,0 +1,21 @@
+uuid: 5409aa84-b901-46f1-9930-ce2cae21537a
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_date_of_match
+    - node.type.match
+id: node.match.field_date_of_match
+field_name: field_date_of_match
+entity_type: node
+bundle: match
+label: 'Date of Match'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 1562733481
+default_value_callback: ''
+settings: {  }
+field_type: timestamp
